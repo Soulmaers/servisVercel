@@ -1,0 +1,51 @@
+.user_card {
+    width: 24%;
+    border-radius: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.body_content {
+    margin-top: 8px;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+
+
+@media (max-width:844px) {
+    .title_user {
+        font-size: 0.8rem;
+    }
+
+    .body_content {
+        height: 65%
+    }
+
+
+}
+
+@media (max-width:432px) {
+    .user_card {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed black;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width:932px) {
+    .user_card {
+        width: 100%;
+        padding-bottom: 10px;
+        border-bottom: 1px dashed black;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,18 @@
+.discription_header {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+
+.row_disc_global {
+    font-size: 30px;
+    margin: 2px 0;
+}

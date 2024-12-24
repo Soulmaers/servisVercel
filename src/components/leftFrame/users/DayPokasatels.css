@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../../../fonts/Akrobat-ExtraBold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../../../fonts/Akrobat-SemiBold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.day_cel {
+    background-color: #2FC1C3;
+    padding: 2px 15px;
+    transform: skewX(-20deg);
+    color: white;
+    box-shadow: 15px 10px 0 #136F8B;
+    align-self: flex-end;
+}
+
+
+
+
+.text_cel {
+    display: inline-block;
+    transform: skew(20deg);
+    color: #000;
+    font-family: Akrobat, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+
+}
+
+
+@media (max-width:1400px) {
+    .day_cel {
+        font-size: 20px;
+    }
+
+    .text_cel {
+        font-size: 22px;
+    }
+
+}

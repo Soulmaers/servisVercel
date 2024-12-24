@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        sessionStorage.redirect = location.href;
+        var path = location.pathname;
+        var basePath = "/7Licenzy";
+        if (path.indexOf(basePath) !== 0) {
+            location.replace(location.origin + basePath);
+        }
+
+        else if (path.split("/").pop() !== "404.html") {
+            location.replace(location.origin + basePath)
+        }
+    </script>
+</head>
+
+<body>
+    <p>Redirecting to <a href="index.html">index.html</a>...</p>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+.logo {
+    width: 500px;
+    height: 100px;
+    background-image: url('./7l.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 30px;
+
+}
+
+@media (max-width:1400px) {
+    .logo {
+        width: 350px;
+        height: 60px;
+    }
+
+}
+
+@media (max-width:432px) {
+    .logo {
+        left: 30px;
+    }
+
+}
+
+@media (max-width:932px) {
+    .logo {
+        left: 30px;
+    }
+
+}

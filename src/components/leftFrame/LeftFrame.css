@@ -1,0 +1,22 @@
+.container_left {
+    width: 100%;
+    height: 45%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+@media (max-width:1400px) {
+    .container_left {
+        height: 50%;
+        padding: 10px 20px;
+    }
+
+}

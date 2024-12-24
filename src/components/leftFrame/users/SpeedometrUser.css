@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../../../fonts/Akrobat-ExtraBold.otf') format('opentype');
+    font-weight: 800;
+    /* Вес для ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../../../fonts/Akrobat-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    /* Вес для ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat';
+    src: url('../../../fonts/Akrobat-Regular.otf') format('opentype');
+    font-weight: 400;
+    /* Вес для ExtraBold */
+    font-style: normal;
+}
+
+.speedometr_user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.speedometr {
+    width: 100px;
+    height: 50px;
+    background-image: url('../../../assets/arka.png');
+    background-size: cover;
+    position: relative;
+    /* Поворот для правильного отображения стрелки */
+
+}
+
+
+
+.arrow {
+    width: 50px;
+    height: 10px;
+    background-image: url('../../../assets/ar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform-origin: 100% 50%;
+    transform: rotate(0deg);
+    transition: transform 0.2s ease;
+
+}
+
+.numbers_procent {
+    font-family: Akrobat;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+
+@media (max-width:1400px) {
+    .numbers_procent {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .speedometr_user {
+        margin-right: 0;
+        justify-content: flex-end;
+        width: auto;
+    }
+
+}
+
+@media (max-width:432px) {
+    .speedometr_user {
+        flex-direction: row !important;
+        width: 100%;
+    }
+
+    .numbers_procent {
+        order: 0 !important;
+    }
+
+
+}
+
+@media (max-width:932px) {
+    .speedometr_user {
+        flex-direction: row !important;
+        width: 100%;
+    }
+
+    .numbers_procent {
+        order: 0 !important;
+    }
+
+
+}

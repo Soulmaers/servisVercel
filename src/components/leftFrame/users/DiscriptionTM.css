@@ -1,0 +1,55 @@
+.wrap_disc_tm {
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #21838a;
+    box-sizing: border-box;
+}
+
+.row_disc_tm {
+    color: #fff;
+    font-size: 1rem;
+}
+
+
+@media (max-width:1400px) {
+    .disc_cel {
+        font-size: 18px;
+    }
+
+    .title_user {
+        width: 100%;
+        border-bottom: 2px solid #fff;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        color: #FFF;
+        background-color: #136F8B;
+        transform: skewX(-20deg);
+        color: white;
+        margin-top: 20px;
+        text-align: start;
+    }
+
+    .child_title_user {
+        display: inline-block;
+        transform: skew(20deg);
+        font-size: 26px;
+        font-family: 'Akrobat';
+        font-weight: 400;
+
+    }
+
+    .value_disc {
+        padding: 5px;
+        border-bottom: 2px dotted #ccc;
+        font-size: 18px;
+        font-family: 'Akrobat';
+        font-weight: 400;
+        width: 80px;
+    }
+
+}
