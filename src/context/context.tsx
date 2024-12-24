@@ -54,7 +54,7 @@ const DashboardDataprovider: React.FC<DashBoardProvider> = ({ children }) => {
 
         // Функция для выполнения запроса
         const fetchData = async () => {
-            const response = await fetch('/api/proxy', {
+            const response = await fetch('https://servis-vercel.vercel.app//api/proxy', {
                 method: 'POST', // Или другой метод, в зависимости от вашего API
                 headers: {
                     'Content-Type': 'application/json',
