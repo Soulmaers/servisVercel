@@ -20,7 +20,7 @@ export default async function handler(req, res) {
         if (!response.ok) {
             throw new Error(`Ошибка: ${response.status} ${response.statusText}`);
         }
-
+        console.log(response)
         // Парсим ответ в формате JSON
         const data = await response.json();
         console.log(data)
