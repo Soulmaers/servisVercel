@@ -30,7 +30,7 @@ export default async function handler(req, res) {
         res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
         res.status(response.status).json(data);
     } catch (error) {
-        res.status(500).json({ error: 'Ошибка при выполнении запроса' });
+        res.status(500).json({ error: console.log(error) + 'Ошибка при выполнении запроса' });
     }
 }
 
