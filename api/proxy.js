@@ -16,7 +16,7 @@ export default async function handler(req, res) {
             method: 'GET', // Метод запроса
             headers: headers
         });
-
+        console.log(response)
         if (!response.ok) {
             throw new Error(`Ошибка: ${response.status} ${response.statusText}`);
         }
@@ -25,9 +25,9 @@ export default async function handler(req, res) {
         const data = await response.json();
         //    console.log(F); // Выводим данные в консоль
         console.log(data._embedded.notes[10])
-        //  res.setHeader('Access-Control-Allow-Origin', '*');
-        // res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-        //  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+        res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
         res.status(response.status).json(data);
     } catch (error) {
         res.status(500).json({ error: 'Ошибка при выполнении запроса' });
